@@ -3,7 +3,10 @@
         <div class="navigation--logo">Portfolio.</div>
         <div class="navigation--menu">
             <ul class="navigation--menu__list">
-                <li class="nav--link"><a href="" class="navigation--menu__link">Home</a></li>
+                <li class="nav--link">
+                  <font-awesome-icon icon="fa-brands fa-home" /> 
+                  <a href="" class="navigation--menu__link">Home</a>
+                </li>
                 <li class="nav--link"><a href="" class="navigation--menu__link">Projets</a></li>
                 <li class="nav--link"><a href="" class="navigation--menu__link">Outils</a></li>  
             </ul>
