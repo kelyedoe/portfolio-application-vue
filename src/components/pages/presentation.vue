@@ -13,7 +13,8 @@
                     oloribus sit. Veritatis voluptas provident accusantium velit. Error?
                 </p>
             </div>
-            <div class="presentation--buttons">
+            <transition name="fade">
+                <div class="presentation--buttons">
                 <div class="presentation--buttons__icon">
                     <font-awesome-icon icon="fa-brands fa-youtube" class="pres--icon" />
                 </div>
@@ -25,10 +26,10 @@
                 </div>
                 <div class="presentation--buttons__icon">
                     <font-awesome-icon icon="fa-brands fa-tiktok" class="pres--icon" />
-                </div>
-              
-                
+                </div>     
             </div>
+            </transition>
+            
 
             <div>
                 <a href=""><button class="presentation--download__button">Télécharger CV</button></a>
@@ -36,16 +37,24 @@
         </div>
         <div>
             <img class="presentation--image" src="src/assets/images/presentation.png" alt="Image not found">
-        </div>
-        
-            
+        </div>            
     </div>
 </template>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 .pres--icon{
     /* padding: 1.2rem; */
     text-align: center;
+    vertical-align: baseline;
     padding-top: 1.3rem;
     
 }
